@@ -307,6 +307,50 @@ strong {
   object-fit: cover;
 }
 
+/*---------------------------------------
+  icons of right side of the header
+  /*-----------------------------------------
+
+    /* Floating Buttons Container */
+    .floating-buttons {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 9999;
+    }
+
+    .floating-buttons a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #ff7f22; /* Default WhatsApp color, can adjust per button */
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 50px;
+      font-size: 14px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .floating-buttons a:hover {
+      transform: scale(1.1);
+    }
+
+    /* Individual Button Colors */
+    .whatsapp { background-color: #25D366; }
+    .call { background-color: #0A66C2; } /* Blue for Call */
+    .quote { background-color: #FF5722; } /* Orange for Get Quote */
+
+    /* Optional: Icons (from Flaticon or similar) */
+    .floating-buttons img {
+      width: 20px;
+      height: 20px;
+    }
 
 /*---------------------------------------
   CUSTOM BUTTON               
