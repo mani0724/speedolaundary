@@ -421,7 +421,7 @@ strong {
 }
 
 .logo {
-  width: 80px;
+  width: 200px;
   height: auto;
 }
 
@@ -569,7 +569,71 @@ strong {
   top: 8px;
 }
 
+.price-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
+.category {
+  background: #eaf4fb;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  max-width: 400px;
+}
+
+.category .icon {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.category .icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.category .icon h2 {
+  font-size: 1.2rem;
+  color: #ff7f22;
+  margin-top: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #ff7f22;
+  color: white;
+  font-weight: 400;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .price-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .category {
+    max-width: 100%;
+  }
+}
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
